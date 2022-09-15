@@ -2,7 +2,7 @@
 <header class="w3-container w3-orange w3-center" style="padding:128px 16px">
     <h1 class="w3-margin w3-jumbo">LOGIN</h1>
     <p class="w3-xlarge"></p>
-    <form method="POST" action="proses_login.php">
+    <form method="POST" id="formLogin">
         <div class="w3-padding-64" style="display: flex; align-items: center; flex-direction: column;">
             <div class="w3-row w3-section">
                 <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-user"></i></div>

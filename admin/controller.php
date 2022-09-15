@@ -56,6 +56,21 @@
 
 	}
 
+	if($page == "dokumen" && $action == "delete")
+	{
+
+		$ID = $_GET['id'];
+
+		$result = mysqli_query($mysqli, "DELETE FROM tb_dokumen WHERE id = $ID") or die(mysqli_error($mysqli));
+
+		if($result){ 
+			echo '<script language="javascript"> window.location.href = "'.$base_url_back.'/enkripsi_dokumen.php" </script>';
+		}else{
+			echo "Maaf, Terjadi kesalahan saat mencoba untuk menyimpan data ke database.";
+		}
+
+	}
+
 	/* USER */
 	if($page == "users" && $action == "insert")
 	{

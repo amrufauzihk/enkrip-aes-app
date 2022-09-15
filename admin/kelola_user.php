@@ -8,7 +8,7 @@
     <h1 class="w3-jumbo"><b>Kelola User</b></h1>
     <hr style="width:50px;border:5px solid orange" class="w3-round">
   </div>
-  <a href="tambah_user.php" class="w3-button w3-orange" style="margin: 15px">+ Tambah</a>
+  <!-- <a href="tambah_user.php" class="w3-button w3-orange" style="margin: 15px">+ Tambah</a> -->
     <table class="w3-table-all">
         <tr>
             <th>No</th>

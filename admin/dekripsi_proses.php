@@ -17,7 +17,7 @@
     $query1  = mysqli_query($mysqli, $sql1) or die(mysqli_error());
 
     $result = mysqli_num_rows($query1);
-
+    // echo var_dump($result);
     if ($result > 0) {
         $data = mysqli_fetch_array($query1);
         echo("<script language='javascript'>

@@ -12,7 +12,7 @@ include_once("admin/config/base-url.php");
 
 	$login = mysqli_query($mysqli, "SELECT * FROM tb_users WHERE username = '$username' AND password='$pass'");
 	$row = mysqli_fetch_array($login);
-	if ($row['username'] == $username && $row['password'] == $pass )
+	if ($row['username'] == $username AND $row['password'] == $pass)
 	{
 		session_start();
 		$_SESSION['id_user']    = $row['id'];
@@ -24,14 +24,12 @@ include_once("admin/config/base-url.php");
 				$_SESSION['status'] = 'USER';
 		}
 
-		// Jika Sukses, redirect halaman menggunakan javascript
-		echo '<script language="javascript"> window.location.href = "'.$base_url_back.'/index.php" </script>';
-		// echo $_SESSION['status'];
+		echo "success";
 	}
 	else  
 	{
 		// Jika Sukses, redirect halaman menggunakan javascript
-		echo '<script language="javascript"> window.location.href = "'.$base_url_front.'/login.php" </script>';
+		echo "error";
 	}
 	
 
